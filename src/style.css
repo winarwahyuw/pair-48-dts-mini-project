@@ -1,0 +1,233 @@
+body{
+    background-color: #121212 !important;
+    color: whitesmoke;
+}
+.container{
+    min-width: 90vw !important;
+    margin-bottom: 20px;
+}
+.content{
+    padding-bottom: 42px;
+}
+.navbar-brand{
+    font-weight: 600;
+    color: whitesmoke !important;
+}
+.navbar a{
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.tag {
+    text-align: center;
+}
+
+
+/* #HEADER */
+.header{
+    margin: 20px auto;
+}
+.header .badge{
+    background-color: unset;
+}
+.header .carousel-caption{
+    background-color: rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    margin: 0;
+}
+.carousel-item .header-img{
+    width: 100%;
+    height: 400px;
+    display: block;
+    border-radius: 20px;
+    object-fit: cover;
+    opacity: 65%;
+}
+.header .movie-title{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.header .movie-desc span:first-child{
+    margin-right: 6px;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .carousel-item{
+        height: 400px;
+    }
+    .details .card .card-body{
+        width: 100%;
+    }  
+    .details .card .movie-desc{
+        height: 50%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .carousel-item{
+        height: 250px;
+    }
+    .details .details-card .card-body{
+        width: 100%;
+    }  
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .carousel-item{
+        height: 350px;
+    }
+    .details .details-card .card-body{
+        width: 70%;
+    }  
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .carousel-item{
+        height: 350px;
+    }
+    .details .details-card .card-body{
+        width: 50%;
+    }  
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .carousel-item{
+        height: 400px;
+    }
+    .details .details-card .card-body{
+        width: 50%;
+    }   
+}
+
+
+/* MOVIE SLIDER */
+.imgSlider img {
+    margin: 5px;
+    width: 100%;
+    height: auto;
+}
+.movie-list{
+    margin: 16px 0;
+}
+.movie-list .card{
+    border-radius: 10pt;
+    border: none;
+    background-color: transparent;
+    padding: 5px;
+    margin: 16px auto;
+}
+.movie-list .category-title{
+    text-transform: capitalize;
+    font-weight: 500;
+    color: white;
+    margin: 8px auto;
+    text-align: left;
+}
+
+.movie-list .img-movie{
+    border-radius: 10pt;
+}
+
+.movie-list .card-footer{
+    backdrop-filter: blur(10px);
+    background-blend-mode: normal;
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+}
+
+/* DETAILS */
+.details{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.details .card{
+    position: relative;
+}
+.details .details-card{
+    border: none;
+    border-radius: 20px;
+    background: none !important;
+    margin: 16px auto;
+    position: relative;
+}
+
+.details .details-img{
+    border-radius: 20px;
+    opacity: 55%;
+}
+.details .badge{
+    color: white;
+    margin-right: 2px;
+    letter-spacing: .5px;
+    font-weight: 400;
+}
+.details .details-card .card-body{
+    position: absolute;
+    bottom: 0;
+    text-align: left;
+    color: whitesmoke;
+}
+.details .movie-title{
+    margin: 16px auto;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+.details .movie-desc{
+    font-size: medium;
+    font-weight: 400;
+}
+
+.details .description .desc-card{
+    background-color: none !important;
+}
+
+.description{
+    position: relative;
+}
+.description .desc-card{
+    background-color: none !important;
+    color: whitesmoke;
+    padding: 16px auto;
+    margin: 16px 0;
+    text-align: center !important;
+    word-spacing: 2px;
+}
+
+.description .desc-card .card-body{
+    padding: 16px auto;
+    text-align: left;
+}
+.description .desc-card .card-title{
+    text-align: left;
+    padding: 16px;
+    text-transform: uppercase;
+}
+
+
+/* FOOTER */
+.footer{
+    padding: 1rem;
+    background-color: inherit;
+    color: white;
+    width: 100%;
+}
+
+.footer p{
+    font-size: small;
+    text-align: left;
+    text-transform: capitalize;
+    color: rgb(195, 195, 195);
+}
